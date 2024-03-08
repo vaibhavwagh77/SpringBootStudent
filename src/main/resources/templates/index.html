@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<head></head>
+	<meta>
+	<title>Student Management System</title>
+	</head>
+	<body>
+		<div align="center">
+			<h1>Student List</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Student First Name</th>
+						<th>Student Last Name</th>
+						<th>Student Contact Number</th>
+						<th>Year</th>
+						<th>Branch</th>
+						<th>Address</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="student : ${ListStudent}">
+						<td th: text="${student.firstname}"></td>
+						<td th: text="${student.lastname}"></td>
+						<td th: text="${student.contactnumber}"></td>
+						<td th: text="${student.year}"></td>
+						<td th: text="${student.branch}"></td>
+						<td th: text="${student.address}"></td>
+						<td th: text="${student.email}"></td>
+						
+					</tr>
+				</tbody>
+			</table>
+				
+		</div>
+		
+	</body>
+	</html>
